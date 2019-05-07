@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:id="@+id/background"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dip"
+        android:background="@drawable/dialog_custom_bg"
+        android:orientation="vertical"
+        android:paddingTop="40dip">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="标题"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_context"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:gravity="center"
+            android:paddingTop="10dip"
+            android:text="内容内容"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/line"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_context"
+            android:layout_marginTop="40dip"
+            android:background="@drawable/about_horizontal_line"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45dip"
+            android:layout_below="@id/line"
+            android:gravity="center_vertical">
+
+            <!-- 确认按钮 -->
+            <Button
+                android:id="@+id/btn_ok"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/dialog_custom_left_btn_selector"
+                android:text="确定"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:id="@+id/cut_line"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/about_vertical_line"
+                android:orientation="vertical"></LinearLayout>
+
+            <!-- 取消按钮 -->
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/dialog_custom_right_btn_selector"
+                android:text="取消"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

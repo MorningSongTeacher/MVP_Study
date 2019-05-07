@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/transparent">
+
+    <RelativeLayout
+        android:id="@+id/background"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dip"
+        android:background="@drawable/dialog_custom_bg"
+        android:orientation="vertical"
+        android:paddingTop="10dip">
+
+        <LinearLayout
+            android:id="@+id/ll_title"
+            android:layout_width="fill_parent"
+            android:layout_height="30dip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dip"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_title"
+                android:layout_width="25dip"
+                android:layout_height="25dip" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="8dip"
+                android:gravity="center"
+                android:text="标题"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_context"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:minLines="2"
+            android:paddingTop="4dip"
+            android:text="内容内容"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/tv_context"
+            android:layout_marginTop="12dip"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45dip"
+            android:layout_below="@id/line"
+            android:gravity="center_vertical">
+
+            <!-- 确认按钮 -->
+
+            <Button
+                android:id="@+id/btn_ok"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="确定"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
